@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Arial',  sans-serif;
+}
+
+nav {
+    background: rgb(106, 12, 109);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/*background color for the links*/
+nav .mainMenu li a:hover {
+    background: rgb(224, 62, 124);
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {color: rgb(0, 110, 225);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-github:hover {color: rgb(255, 0, 191);}
+.fa-instagram:hover {color: rgb(255, 123, 0);}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.general {
+    
+    font-family: 'Arial',  sans-serif
+
+}
+input {
+    width: 500px;
+    padding: 1em;
+    border-radius: 20px;
+    outline: none;
+    border-color: rgb(69, 60, 110);
+}
+
+button {
+    width: 200px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(69, 60, 110);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.opp1 h3{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color:rgb(70, 65, 65)
+}
+
+
+.opp2 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+input {
+    font-size: 18px;
+}
+
+
+.opp4 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.opp5 {
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(70, 65, 65);
+}
+
+
+
+@media (max-width: 800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,1);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(225, 123, 0);
+        font-size: 1.6rem;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px; 
+    }
+
+    
+
+}

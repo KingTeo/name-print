@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/5566f0c562.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><h1>codes</h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#">resume</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </span>
+            
+            
+        </ul>
+    </nav>
+
+    <div class="general">
+    <div class="opp1">
+    <h3>Print your name</h3>
+    </div>
+
+    <div class="opp2">
+    <input type="text" id="myText" value="Some text...">
+    </div>
+    
+    
+    <div class="opp4">
+    <button onclick="myFunction()">submit</button>
+    </div>
+    
+    
+    <div class="opp5">
+        <p id="demo"></p>
+    </div>
+
+    </div>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myText").value;
+      document.getElementById("demo").innerHTML = x;
+    }
+    </script>
+    
+
+
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
